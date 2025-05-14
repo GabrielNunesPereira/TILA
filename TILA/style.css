@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  background-color: #0072ff;
+  background-image: url('/img/estrelas.png'); /* Se tiver imagem de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 50px;
+  color: #ffd700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 0.8;
+  padding: 0;
+}
+
+.logo {
+  height: 100px;
+}
+
+.auth-links a {
+  color: #ffd700;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 120px;
+  min-height: 80vh;
+}
+
+.hero-text {
+  max-width: 750px;
+}
+
+.hero-text h1 {
+  font-size: 6.5rem;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.highlight {
+  color: white;
+  font-weight: bold;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  display: inline;
+}
+
+.hero-text p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  position: relative;
+  width: 550px;
+  height: 550px;
+}
+
+.planet {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.robot {
+  width: 360px;
+  position: absolute;
+  top: -100px;
+  left: 100px;
+  z-index: 2;
+  animation: float-bot 3s ease-in-out infinite;
+}
+
+/* Animação do robô */
+@keyframes float-bot {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
